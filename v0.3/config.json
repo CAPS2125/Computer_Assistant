@@ -1,0 +1,79 @@
+{
+  "idioma": "es-MX",
+  "palabras_activacion": ["asistente"],
+  "ventana_activa_s": 8,
+  "ventana_seguimiento_s": 0,
+  "aburrida_s": 45,
+  "burbuja_s": 4,
+  "tts": { "activo": true, "velocidad": 165 },
+  "comandos": [
+    {
+      "id": "saludo",
+      "palabras": ["hola", "buenos dias", "buenas tardes", "que onda"],
+      "respuestas": ["A volar 🚀", "Señor...", "Ya tomé café virtual ☕", "¡Set-up listo! 💻", "¡A sus órdenes!"]
+    },
+    {
+      "id": "programar",
+      "palabras": ["programar", "programacion"],
+      "urls": ["https://claude.ai", "https://gemini.google.com", "https://colab.research.google.com"],
+      "mensaje": "Preparando entorno de programación"
+    },
+    {
+      "id": "descargar",
+      "palabras": ["descargar"],
+      "urls": ["https://drive.google.com"],
+      "run": [["explorer.exe"]],
+      "mensaje": "Abriendo Drive y Archivos"
+    },
+    {
+      "id": "conjunto",
+      "palabras": ["conjunto", "dataset"],
+      "urls": ["https://www.kaggle.com", "https://huggingface.co/datasets", "https://github.com"],
+      "mensaje": "Abriendo entornos de datos"
+    },
+    {
+      "id": "limpiar",
+      "palabras": ["limpiar"],
+      "kill": ["msedge.exe", "notepad.exe", "calc.exe", "Code.exe"],
+      "forzar": false,
+      "confirmar": true,
+      "mensaje": "Cerrando Edge, VS Code, Notas y Calculadora"
+    },
+    {
+      "id": "notas",
+      "palabras": ["notas", "bloc de notas"],
+      "run": [["notepad.exe"]],
+      "mensaje": "Abriendo Bloc de notas"
+    },
+    {
+      "id": "calculadora",
+      "palabras": ["calculadora"],
+      "run": [["calc.exe"]],
+      "mensaje": "Abriendo Calculadora"
+    },
+    {
+      "id": "explorador",
+      "palabras": ["explorador", "archivos"],
+      "run": [["explorer.exe"]],
+      "mensaje": "Abriendo Archivos"
+    },
+    {
+      "id": "claude",
+      "palabras": ["claude", "claudio"],
+      "urls": ["https://claude.ai"],
+      "mensaje": "Abriendo Claude"
+    },
+    {
+      "id": "navegador",
+      "palabras": ["navegador"],
+      "run": [["cmd", "/c", "start", "", "msedge"]],
+      "mensaje": "Abriendo Edge"
+    },
+    {
+      "id": "apagar",
+      "palabras": ["apagate", "hasta luego", "adios"],
+      "mensaje": "¡Hasta luego!",
+      "apagar": true
+    }
+  ]
+}
